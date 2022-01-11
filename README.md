@@ -49,7 +49,7 @@ Host *
 Then, go to your **Github** profile and go to *Settings > SSH and GPG keys > New SSH key*. Paste the previously generated key in the specifcied and ad a name that link to it e.g. "Gian Macbook Air".
 ```
 cat .ssh/id_ed25519.pub 
-``
+```
 You should be now all set and you can start using git.
 
 > **_NOTE_** At the first time you try to `git pull` you may be prompted to inset a password. That password is the passphrase you added when you genrated the keypar and not the github paswword.
