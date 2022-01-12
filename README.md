@@ -11,8 +11,8 @@ The first step you need to work with **Git** is to have your computer able to co
 ### Autenticate your local computer 
 
 A couple of good guides for Mac, Windows and Linux can be found here: 	
-(https://docs.github.com/en/authentication)
-(https://happygitwithr.com/rstudio-git-github.html)
+https://docs.github.com/en/authentication
+https://happygitwithr.com/rstudio-git-github.html
 
 Check if you have any `ssh` key already present in your `/home` directory
 ```
