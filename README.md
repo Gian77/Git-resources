@@ -10,7 +10,7 @@ The first step you need to work with **Git** is to have your computer able to co
 
 ### Autenticate your local computer 
 
-A couple of good guides for Mac, Windows and Linux can be found here: 	
+A couple of good guides for Mac, Windows and Linux can be found here: <bc>	
 https://docs.github.com/en/authentication
 https://happygitwithr.com/rstudio-git-github.html
 
