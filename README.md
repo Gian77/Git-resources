@@ -4,7 +4,7 @@
 
 #### Copirght (C) 2022 *gian.benucci[at]gmail.com* MIT License
 
-1) # Connect your local computer to Github
+## 1) Connect your local computer to Github
 
 The first step you need to do to work with **Git** is to have your computer able to comunicate to **Github** or another version control system.
 
@@ -19,7 +19,7 @@ So, check if you have any `ssh` key already present in your you computer `/home`
 ```
 ls -al ~/.ssh
 ```
-* ### Generate *SSH* keys
+* ### Generate *SSH* keys on your local computer
 
 if you don't have `ssh` you have to install it. In Linux (e.g. Ubuntu) you just install it by running
 ```
@@ -68,7 +68,7 @@ You should be now all set and you can start using git.
 > **_NOTE_** At the first time you try to `git pull` you may be prompted to inset a password. That password is the passphrase you added when you genrated the key pair and not the github passwword.
 
 
-2) ## Creating a repo
+## 2) Creating a repository for your project
 
 Now, go to Githib and create a repo *Repositories > New*. Give the repo a name, make it public, then add a `README.md` file and a `LICENSE` (e.g. MIT), you may want to ad a `.gitingore` and the create.
 The .gitignore file is very useful and I suggest you add it in, it helps to specify which files you do not want Git to track.
