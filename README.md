@@ -10,9 +10,9 @@ The first step you need to do to work with **Git** is to have your computer able
 
 * ### Autenticate your local computer
 
-A couple of good guides for Mac, Windows and Linux can be found here: 	
-(https://docs.github.com/en/authentication)
-(https://happygitwithr.com/rstudio-git-github.html)
+A couple of good guides for Mac, Windows and Linux can be found here: <bc>
+https://docs.github.com/en/authentication
+https://happygitwithr.com/rstudio-git-github.html
 
 So, check if you have any `ssh` key already present in your you computer `/home` directory
 
@@ -59,7 +59,7 @@ Host *
 
 * ### Generate a new SSH key for your computer on Github
 
-Then, go to your Github profile and go to *Settings > SSH and GPG keys > New SSH key*. Paste the previously generated key in the specifcied and ad a name that link to it e.g. "Gian Macbook Air". You will need an SSH key for each computer you are connecting to Github.
+Then, go to your Github profile and go to *Settings > SSH and GPG keys > New SSH key*. Paste the previously generated key in the specifcied and ad a name that link to it e.g. "Gian Macbook Air". You will need an SSH key for each computer you are connecting to Github. For example, copy the key in:
 ```
 cat .ssh/id_ed25519.pub
 ```
