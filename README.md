@@ -84,10 +84,6 @@ git clone git@github.com:Gian77/How-to-ggplot2.git
 ```
 After that you can `cd` your new git repo.
 
-* ### Initialize the repository for the terminal
-
-This is a little more tedious and with two factor authentication or authentication token active it is more of a toruble to configure. I will add details about this in a later time. You can find good info on how to set it up [here](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line) and [here](https://github.com/donnemartin/gitsome#enabling-bash-completions).
-
 3) ## Start working with your Git repository
 
 At this point you can start working at you rproject in the repo. When you are ready, you should *stage*, add the files you want to push in Github, *commit*, create a comment of what this push is about, and finally push your new content.
@@ -98,3 +94,41 @@ git add .
 git commit -m "initial commit"
 git push
 ```
+
+## 4) Adding a local repository to GitHub using Git
+
+This is a little more tedious and with two factor authentication or authentication token. You can find good info on how to set it up [here](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line) and [here](https://github.com/donnemartin/gitsome#enabling-bash-completions).
+
+In Github, create a new repository. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
+
+> **_NOTE_** If you want you can create .gitingore, LICENSE and README.md files in the local directory and push them with your first push.
+
+```
+git init
+```
+
+Add files
+
+```
+git add .
+```
+Commit the files that you've staged in your local repository.
+
+```
+git commit -m "First commit"
+```
+At the top of your repository on GitHub.com's Quick Setup page, click  to copy the remote repository URL. In Terminal, add the URL for the remote repository where your local repository will be pushed.
+
+```
+# Sets the new remote URL
+git remote add origin  <REMOTE_URL>
+
+# Verifies the new remote URL
+git remote -v
+```
+
+If you end up having the error:
+```
+fatal: bad config value for 'color.ui' in /mnt/home/benucci/.gitconfig
+```
+open `/mnt/home/benucci/.gitconfig` and erasing the [color] section should solve it.
