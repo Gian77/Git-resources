@@ -132,3 +132,62 @@ If you end up having the error:
 fatal: bad config value for 'color.ui' in /mnt/home/benucci/.gitconfig
 ```
 open `/mnt/home/benucci/.gitconfig` and erasing the [color] section should solve it.
+
+> **_NOTE_**
+To permanently add you passphrase to the key just do `ssh-add`
+If you want to remove the file from the Git repository and the filesystem, use: `git rm file.txt` and then `git commit -m "remove file.txt"`
+
+# Some useful tips
+
+If you cloned an empty repo, and then you want to push a just created `README.md`, you should specify the branch you need to upload the file into. FOr example, if you want the branch master to be generated then:
+```
+git push origin master
+```
+
+### To visualize branches
+Not all commands work in the same version of git.
+```
+git branch
+git rev-parse --abbrev-ref HEAD
+git branch --show-current
+```
+
+### To pull a specific repo/file
+```
+git fetch
+git checkout HEAD stats/readCounts.txt
+```
+
+### Git removing deleted files from tracking
+Use git rm to delete a file and make Git recognize the deletion.
+
+```
+git rm path/to/file
+git commit
+git push
+```
+
+to undelete deleted a file in git
+```
+git checkout -- <file>
+```
+to unstage a deleted file
+
+# Very dangerous commands
+```
+git clean -f
+git reset
+```
+# Errors and solves
+You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+
+```
+git merge --abort
+git reset --merge
+```
+# Chnage git default editor to nano
+
+There are two ways in which this can be done. The first is via the terminal; this is useful if you want your editor to be `nano`, for example. The command to do this is `git config --global core.editor "nano"`. You can change the highlighted section with your editor of choice!
+
+Another way to do this is to edit the `.gitconfig` file in your home directory. The location of this file depends on the operating system you're using. 
